@@ -1,0 +1,24 @@
+# robots.txt pentru site-ul de psihiatrie Brașov
+
+# Permite accesul tuturor motoarelor de căutare
+User-agent: *
+Allow: /
+
+# Blochează accesul la fișiere și directoare sensibile
+Disallow: /admin/
+Disallow: /login/
+Disallow: /private/
+Disallow: /*.json$
+Disallow: /*.log$
+
+# Permite accesul la resursele importante
+Allow: /index.html
+Allow: /styles.css
+Allow: /script.js
+Allow: /icons/
+Allow: /logo.png
+Allow: /professional-female-psychiatrist-doctor-portrait-s.jpg
+
+# Sitemap
+Sitemap: https://www.example.com/sitemap.xml
+
