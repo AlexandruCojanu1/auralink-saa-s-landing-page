@@ -1,8 +1,16 @@
 /* Custom Styles pentru Landing Page */
 
+/* Color Variables */
+:root {
+  --primary-green: #2a5a4c;
+  --primary-green-hover: #3a7a6c;
+  --light-green: #e8f0ed;
+  --lighter-green: #f5f8f6;
+}
+
 /* Font Family */
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif !important;
+  font-family: 'Quicksand', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif !important;
   -webkit-font-smoothing: antialiased !important;
   -moz-osx-font-smoothing: grayscale !important;
   text-rendering: optimizeLegibility !important;
@@ -341,6 +349,7 @@ section#home > div > div > div[class*="rounded"] {
   box-shadow: 0 2px 8px rgba(42, 90, 76, 0.06), 0 1px 3px rgba(0, 0, 0, 0.04) !important;
 }
 
+
 /* Animations */
 @keyframes fadeIn {
   from {
@@ -423,6 +432,7 @@ section#home > div > div > div[class*="rounded"] {
 html {
   scroll-behavior: smooth;
 }
+
 
 /* Philosophy Card Hover Effect */
 .philosophy-card {
@@ -538,6 +548,12 @@ html {
   flex-shrink: 0;
 }
 
+/* FAQ Section */
+.faq-item.active {
+  border-left: 3px solid #2a5a4c;
+  padding-left: 1rem;
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .fade-in-up {
@@ -563,11 +579,26 @@ html {
   }
 }
 
+
 /* Hero Section Mobile Specific Styles */
 @media (max-width: 640px) {
   section#home {
     padding-left: 1rem;
     padding-right: 1rem;
   }
+}
+
+/* Dots Background Pattern */
+.dots-background {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  background-image: url("data:image/svg+xml,%3Csvg width='15' height='15' viewBox='0 0 15 15' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%232a5a4c' fill-opacity='0.4' fill-rule='evenodd'%3E%3Ccircle cx='1.2' cy='1.2' r='1.2'/%3E%3C/g%3E%3C/svg%3E");
+  mask-image: radial-gradient(circle, white 10%, transparent 90%);
+  -webkit-mask-image: radial-gradient(circle, white 10%, transparent 90%);
+  pointer-events: none;
+  z-index: 1;
 }
 

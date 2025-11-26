@@ -241,163 +241,188 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 // Modal/Popup Functions
 const modalContent = {
-  misiune: {
-    title: 'Misiunea mea',
+  filosofie: {
+    title: 'Despre mine',
+    content: `
+      <div class="space-y-6">
+        <div>
+          <h4 class="text-xl font-semibold text-[#2a5a4c] mb-3">Misiunea mea</h4>
+          <p class="text-[#5a7a6c] text-base leading-7 mb-4">
+            Atingerea <strong>echilibrului emoțional</strong> prin oferirea unei abordări <strong>personalizate</strong> și <strong>integrate</strong> unde tratamentul se concentrează pe persoana în ansamblul ei. Pun accentul pe crearea unei <strong>relații terapeutice solide</strong> bazate pe <strong>comunicare deschisă</strong> pentru a descoperi și a fortifica <strong>resursele interioare</strong> unice ale fiecărui pacient.
+          </p>
+        </div>
+        
+        <div>
+          <h4 class="text-xl font-semibold text-[#2a5a4c] mb-3">Viziunea mea</h4>
+          <p class="text-[#5a7a6c] text-base leading-7 mb-4">
+            Să stabilesc un <strong>nou standard</strong> în psihiatrie prin îmbinarea <strong>rigorii științifice</strong> cu <strong>empatia profundă</strong>, considerând actul medical ca o <strong>întâlnire esențială</strong> între știință și umanitate. Vizez <strong>creșterea calității vieții</strong> pacienților ajutându-i să-și regăsească pe deplin <strong>echilibrul emoțional</strong>.
+          </p>
+        </div>
+        
+        <div>
+          <h4 class="text-xl font-semibold text-[#2a5a4c] mb-3">Experiența mea</h4>
+          <ul class="space-y-2">
+            <li class="flex items-start gap-3">
+              <span class="text-[#2a5a4c] mr-2"></span>
+              <span class="text-[#5a7a6c] text-base leading-6">am absolvit Facultatea de Medicină a Universității Transilvania din Brașov în 2013</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-[#2a5a4c] mr-2"></span>
+              <span class="text-[#5a7a6c] text-base leading-6">am efectuat perioada de rezidențiat la Spitalul de Psihiatrie și Neurologie Brașov</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-[#2a5a4c] mr-2"></span>
+              <span class="text-[#5a7a6c] text-base leading-6">am efectuat gărzi în cadrul Spitalului de Psihiatrie și Neurologie Brașov precum și în cadrul Spitalului Județean de Urgență "Dr. Fogolyan Kristof" Sfântu Gheorghe</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-[#2a5a4c] mr-2"></span>
+              <span class="text-[#5a7a6c] text-base leading-6">lucrez ca Medic psihiatru specialist din 2018</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-[#2a5a4c] mr-2"></span>
+              <span class="text-[#5a7a6c] text-base leading-6">activez în cadrul Ambulatoriului Spitalului Clinic Militar de Urgență "Regina Maria" Brașov</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-[#2a5a4c] mr-2"></span>
+              <span class="text-[#5a7a6c] text-base leading-6">acord consultații în cadrul clinicii Neuromedica din Brașov</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-[#2a5a4c] mr-2"></span>
+              <span class="text-[#5a7a6c] text-base leading-6">am la activ numeroase cursuri de specialitate legate de patologia psihiatrică, precum și comunicare medic-pacient, gestionarea situațiilor de criză, bunăstarea emoțională și descoperirea potențialului interior</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-[#2a5a4c] mr-2"></span>
+              <span class="text-[#5a7a6c] text-base leading-6">am competențe de limba engleză nivel C1 (avansat)</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    `
+  },
+  servicii: {
+    title: 'Servicii',
+    content: `
+      <div class="space-y-6">
+        <div>
+          <h4 class="text-xl font-semibold text-[#2a5a4c] mb-3">Consultații, consiliere psihiatrică și psihoeducație în:</h4>
+          <ul class="space-y-2">
+            <li class="flex items-start gap-3">
+              <span class="text-[#2a5a4c] mr-2"></span>
+              <span class="text-[#5a7a6c] text-base leading-6">dificultăți de adaptare la stres și diverse probleme psihoemotionale (ex. schimbarea locului de muncă, divorț, pierderea unei persoane dragi, maternitate, probleme de sănătate)</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-[#2a5a4c] mr-2"></span>
+              <span class="text-[#5a7a6c] text-base leading-6">tulburări ale dispoziției: depresie, tulburare bipolară</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-[#2a5a4c] mr-2"></span>
+              <span class="text-[#5a7a6c] text-base leading-6">tulburări anxioase: anxietate generalizată, tulburare de panică, anxietate socială, fobii, tulburare obsesiv-compulsivă</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-[#2a5a4c] mr-2"></span>
+              <span class="text-[#5a7a6c] text-base leading-6">tulburări psihotice: schizofrenia și alte psihoze</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-[#2a5a4c] mr-2"></span>
+              <span class="text-[#5a7a6c] text-base leading-6">tulburări neurocognitive: demența Alzheimer sau vasculară</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-[#2a5a4c] mr-2"></span>
+              <span class="text-[#5a7a6c] text-base leading-6">tulburări ale consumului de substanțe: alcool, tutun, alte substanțe</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-[#2a5a4c] mr-2"></span>
+              <span class="text-[#5a7a6c] text-base leading-6">tulburări de somn</span>
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="text-xl font-semibold text-[#2a5a4c] mb-3">Elaborarea unui plan de tratament individualizat</h4>
+          <ul class="space-y-2">
+            <li class="flex items-start gap-3">
+              <span class="text-[#2a5a4c] mr-2"></span>
+              <span class="text-[#5a7a6c] text-base leading-6">prescrierea tratamentului medicamentos și monitorizarea acestuia</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-[#2a5a4c] mr-2"></span>
+              <span class="text-[#5a7a6c] text-base leading-6">recomandarea psihoterapiei</span>
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="text-xl font-semibold text-[#2a5a4c] mb-3">Eliberare de documente medicale</h4>
+          <ul class="space-y-2">
+            <li class="flex items-start gap-3">
+              <span class="text-[#2a5a4c] mr-2"></span>
+              <span class="text-[#5a7a6c] text-base leading-6">scrisori medicale</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-[#2a5a4c] mr-2"></span>
+              <span class="text-[#5a7a6c] text-base leading-6">rețete</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-[#2a5a4c] mr-2"></span>
+              <span class="text-[#5a7a6c] text-base leading-6">concedii medicale</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-[#2a5a4c] mr-2"></span>
+              <span class="text-[#5a7a6c] text-base leading-6">bilete de trimitere către specialist</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-[#2a5a4c] mr-2"></span>
+              <span class="text-[#5a7a6c] text-base leading-6">bilete de trimitere către investigații</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-[#2a5a4c] mr-2"></span>
+              <span class="text-[#5a7a6c] text-base leading-6">referate medicale</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-[#2a5a4c] mr-2"></span>
+              <span class="text-[#5a7a6c] text-base leading-6">aviz pentru concurs/angajare/înscriere</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-[#2a5a4c] mr-2"></span>
+              <span class="text-[#5a7a6c] text-base leading-6">aviz pentru obținerea permisului de conducere</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-[#2a5a4c] mr-2"></span>
+              <span class="text-[#5a7a6c] text-base leading-6">aviz pentru permis de port-armă</span>
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="text-xl font-semibold text-[#2a5a4c] mb-3">Suport continuu</h4>
+          <ul class="space-y-2">
+            <li class="flex items-start gap-3">
+              <span class="text-[#2a5a4c] mr-2"></span>
+              <span class="text-[#5a7a6c] text-base leading-6">posibilitatea de a comunica cu mine telefonic între consultații</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    `
+  },
+  consultatie: {
+    title: 'Cum se desfășoară o consultație?',
     content: `
       <p class="text-[#5a7a6c] text-base leading-7 mb-4">
-        Atingerea <strong>echilibrului emoțional</strong> prin oferirea unei abordări <strong>personalizate</strong> și <strong>integrate</strong> unde tratamentul se concentrează pe persoana în ansamblul ei. Pun accentul pe crearea unei <strong>relații terapeutice solide</strong> bazate pe <strong>comunicare deschisă</strong> pentru a descoperi și a fortifica <strong>resursele interioare</strong> unice ale fiecărui pacient.
+        În data și la ora <strong>programată</strong>, ajuns la cabinet, vei prezenta un <strong>document de identitate</strong> și după caz alte documente. Am să îți adresez câteva întrebări pentru a te <strong>cunoaște mai bine</strong> și apoi îți voi acorda <strong>timpul necesar</strong> pentru a-mi spune povestea ta.
       </p>
-    `
-  },
-  viziune: {
-    title: 'Viziunea mea',
-    content: `
       <p class="text-[#5a7a6c] text-base leading-7 mb-4">
-        Să stabilesc un <strong>nou standard</strong> în psihiatrie prin îmbinarea <strong>rigorii științifice</strong> cu <strong>empatia profundă</strong>, considerând actul medical ca o <strong>întâlnire esențială</strong> între știință și umanitate. Vizez <strong>creșterea calității vieții</strong> pacienților ajutându-i să-și regăsească pe deplin <strong>echilibrul emoțional</strong>.
+        Îți voi adresa întrebări prin care să obțin informații legate de <strong>starea ta psihică și fizică</strong>. Îți voi comunica cele constatate de mine și dacă este cazul, <strong>diagnosticul</strong> pe care l-am stabilit.
       </p>
-    `
-  },
-  experienta: {
-    title: 'Experiența mea',
-    content: `
-      <ul class="space-y-3">
-        <li class="flex items-start gap-3">
-          <div class="w-2 h-2 rounded-full bg-[#2a5a4c] mt-2 flex-shrink-0"></div>
-          <span class="text-[#5a7a6c] text-base leading-6">Am absolvit Facultatea de Medicină a Universității Transilvania din Brașov în 2013</span>
-        </li>
-        <li class="flex items-start gap-3">
-          <div class="w-2 h-2 rounded-full bg-[#2a5a4c] mt-2 flex-shrink-0"></div>
-          <span class="text-[#5a7a6c] text-base leading-6">Am efectuat perioada de rezidențiat la Spitalul de Psihiatrie și Neurologie Brașov</span>
-        </li>
-        <li class="flex items-start gap-3">
-          <div class="w-2 h-2 rounded-full bg-[#2a5a4c] mt-2 flex-shrink-0"></div>
-          <span class="text-[#5a7a6c] text-base leading-6">Am efectuat gărzi în cadrul Spitalului de Psihiatrie și Neurologie Brașov precum și în cadrul Spitalului Județean de Urgență "Dr. Fogolyan Kristof" Sfântu Gheorghe</span>
-        </li>
-        <li class="flex items-start gap-3">
-          <div class="w-2 h-2 rounded-full bg-[#2a5a4c] mt-2 flex-shrink-0"></div>
-          <span class="text-[#5a7a6c] text-base leading-6">Lucrez ca Medic psihiatru specialist din 2018</span>
-        </li>
-        <li class="flex items-start gap-3">
-          <div class="w-2 h-2 rounded-full bg-[#2a5a4c] mt-2 flex-shrink-0"></div>
-          <span class="text-[#5a7a6c] text-base leading-6">Activez în cadrul Ambulatoriului Spitalului Clinic Militar de Urgență "Regina Maria" Brașov</span>
-        </li>
-        <li class="flex items-start gap-3">
-          <div class="w-2 h-2 rounded-full bg-[#2a5a4c] mt-2 flex-shrink-0"></div>
-          <span class="text-[#5a7a6c] text-base leading-6">Acord consultații în cadrul clinicii Neuromedica din Brașov</span>
-        </li>
-        <li class="flex items-start gap-3">
-          <div class="w-2 h-2 rounded-full bg-[#2a5a4c] mt-2 flex-shrink-0"></div>
-          <span class="text-[#5a7a6c] text-base leading-6">Am la activ numeroase cursuri de specialitate legate de patologia psihiatrică, comunicare medic-pacient, gestionarea situațiilor de criză, bunăstarea emoțională și descoperirea potențialului interior</span>
-        </li>
-        <li class="flex items-start gap-3">
-          <div class="w-2 h-2 rounded-full bg-[#2a5a4c] mt-2 flex-shrink-0"></div>
-          <span class="text-[#5a7a6c] text-base leading-6">Competențe de limba engleză nivel C1 (avansat)</span>
-        </li>
-      </ul>
-    `
-  },
-  consultatii: {
-    title: 'Consultații, consiliere psihiatrică și psihoeducație',
-    content: `
-      <ul class="space-y-2 pl-4">
-        <li class="flex items-start gap-3">
-          <div class="w-1.5 h-1.5 rounded-full bg-[#5a7a6c] mt-2 flex-shrink-0"></div>
-          <span class="text-[#5a7a6c] text-base leading-6">Dificultăți de adaptare la stres și diverse probleme psihoemotionale (ex. schimbarea locului de muncă, divorț, pierderea unei persoane dragi, maternitate, probleme de sănătate)</span>
-        </li>
-        <li class="flex items-start gap-3">
-          <div class="w-1.5 h-1.5 rounded-full bg-[#5a7a6c] mt-2 flex-shrink-0"></div>
-          <span class="text-[#5a7a6c] text-base leading-6">Tulburări ale dispoziției: depresie, tulburare bipolară</span>
-        </li>
-        <li class="flex items-start gap-3">
-          <div class="w-1.5 h-1.5 rounded-full bg-[#5a7a6c] mt-2 flex-shrink-0"></div>
-          <span class="text-[#5a7a6c] text-base leading-6">Tulburări anxioase: anxietate generalizată, tulburare de panică, anxietate socială, fobii, tulburare obsesiv-compulsivă</span>
-        </li>
-        <li class="flex items-start gap-3">
-          <div class="w-1.5 h-1.5 rounded-full bg-[#5a7a6c] mt-2 flex-shrink-0"></div>
-          <span class="text-[#5a7a6c] text-base leading-6">Tulburări psihotice: schizofrenia și alte psihoze</span>
-        </li>
-        <li class="flex items-start gap-3">
-          <div class="w-1.5 h-1.5 rounded-full bg-[#5a7a6c] mt-2 flex-shrink-0"></div>
-          <span class="text-[#5a7a6c] text-base leading-6">Tulburări neurocognitive: demența Alzheimer sau vasculară</span>
-        </li>
-        <li class="flex items-start gap-3">
-          <div class="w-1.5 h-1.5 rounded-full bg-[#5a7a6c] mt-2 flex-shrink-0"></div>
-          <span class="text-[#5a7a6c] text-base leading-6">Tulburări ale consumului de substanțe: alcool, tutun, alte substanțe</span>
-        </li>
-        <li class="flex items-start gap-3">
-          <div class="w-1.5 h-1.5 rounded-full bg-[#5a7a6c] mt-2 flex-shrink-0"></div>
-          <span class="text-[#5a7a6c] text-base leading-6">Tulburări de somn</span>
-        </li>
-      </ul>
-    `
-  },
-  'plan-tratament': {
-    title: 'Elaborarea unui plan de tratament individualizat',
-    content: `
-      <ul class="space-y-2 pl-4">
-        <li class="flex items-start gap-3">
-          <div class="w-1.5 h-1.5 rounded-full bg-[#5a7a6c] mt-2 flex-shrink-0"></div>
-          <span class="text-[#5a7a6c] text-base leading-6">Prescrierea tratamentului medicamentos și monitorizarea acestuia</span>
-        </li>
-        <li class="flex items-start gap-3">
-          <div class="w-1.5 h-1.5 rounded-full bg-[#5a7a6c] mt-2 flex-shrink-0"></div>
-          <span class="text-[#5a7a6c] text-base leading-6">Recomandarea psihoterapiei</span>
-        </li>
-      </ul>
-    `
-  },
-  documente: {
-    title: 'Eliberare de documente medicale',
-    content: `
-      <ul class="space-y-2 pl-4">
-        <li class="flex items-start gap-3">
-          <div class="w-1.5 h-1.5 rounded-full bg-[#5a7a6c] mt-2 flex-shrink-0"></div>
-          <span class="text-[#5a7a6c] text-base leading-6">Scrisori medicale</span>
-        </li>
-        <li class="flex items-start gap-3">
-          <div class="w-1.5 h-1.5 rounded-full bg-[#5a7a6c] mt-2 flex-shrink-0"></div>
-          <span class="text-[#5a7a6c] text-base leading-6">Rețete</span>
-        </li>
-        <li class="flex items-start gap-3">
-          <div class="w-1.5 h-1.5 rounded-full bg-[#5a7a6c] mt-2 flex-shrink-0"></div>
-          <span class="text-[#5a7a6c] text-base leading-6">Concedii medicale</span>
-        </li>
-        <li class="flex items-start gap-3">
-          <div class="w-1.5 h-1.5 rounded-full bg-[#5a7a6c] mt-2 flex-shrink-0"></div>
-          <span class="text-[#5a7a6c] text-base leading-6">Bilete de trimitere către specialist</span>
-        </li>
-        <li class="flex items-start gap-3">
-          <div class="w-1.5 h-1.5 rounded-full bg-[#5a7a6c] mt-2 flex-shrink-0"></div>
-          <span class="text-[#5a7a6c] text-base leading-6">Bilete de trimitere către investigații</span>
-        </li>
-        <li class="flex items-start gap-3">
-          <div class="w-1.5 h-1.5 rounded-full bg-[#5a7a6c] mt-2 flex-shrink-0"></div>
-          <span class="text-[#5a7a6c] text-base leading-6">Referate medicale</span>
-        </li>
-        <li class="flex items-start gap-3">
-          <div class="w-1.5 h-1.5 rounded-full bg-[#5a7a6c] mt-2 flex-shrink-0"></div>
-          <span class="text-[#5a7a6c] text-base leading-6">Aviz pentru concurs/angajare/înscriere</span>
-        </li>
-        <li class="flex items-start gap-3">
-          <div class="w-1.5 h-1.5 rounded-full bg-[#5a7a6c] mt-2 flex-shrink-0"></div>
-          <span class="text-[#5a7a6c] text-base leading-6">Aviz pentru obținerea permisului de conducere</span>
-        </li>
-        <li class="flex items-start gap-3">
-          <div class="w-1.5 h-1.5 rounded-full bg-[#5a7a6c] mt-2 flex-shrink-0"></div>
-          <span class="text-[#5a7a6c] text-base leading-6">Aviz pentru permis de port-armă</span>
-        </li>
-      </ul>
-    `
-  },
-  suport: {
-    title: 'Suport continuu',
-    content: `
-      <ul class="space-y-2 pl-4">
-        <li class="flex items-start gap-3">
-          <div class="w-1.5 h-1.5 rounded-full bg-[#5a7a6c] mt-2 flex-shrink-0"></div>
-          <span class="text-[#5a7a6c] text-base leading-6">Posibilitatea de a <strong>comunica cu mine telefonic</strong> între consultații</span>
-        </li>
-      </ul>
+      <p class="text-[#5a7a6c] text-base leading-7 mb-4">
+        Apoi vom discuta despre <strong>opțiunile de tratament</strong>, având o abordare <strong>holistică</strong> și <strong>colaborativă</strong>. Vei afla informații despre medicamentele propuse, efectele medicației, durata tratamentului, precum și alte sfaturi.
+      </p>
+      <p class="text-[#5a7a6c] text-base leading-7 mb-4">
+        Vom căuta și <strong>soluții alternative</strong> și <strong>terapii complementare</strong>. Am să îți eliberez <strong>documentele medicale necesare</strong>.
+      </p>
+      <p class="text-[#5a7a6c] text-base leading-7">
+        Vom stabili data <strong>următorului consult</strong> pentru a evalua <strong>îndeplinirea planului terapeutic</strong> și <strong>evoluția simptomatologiei</strong>. Îți voi oferi <strong>modalități de a mă contacta</strong> între consultații.
+      </p>
     `
   }
 };
