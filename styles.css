@@ -109,7 +109,7 @@ h1, h2 {
   object-fit: cover;
   object-position: center;
   display: block;
-  filter: brightness(0) invert(1); /* Face logo-ul alb pe fundal verde */
+  filter: brightness(0); /* Face logo-ul negru pentru vizibilitate pe fundal alb */
 }
 
 .pill-list {
