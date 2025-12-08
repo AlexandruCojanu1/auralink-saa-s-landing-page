@@ -808,3 +808,14 @@ html {
   }
 }
 
+/* Consultation section - increased spacing between paragraphs on desktop */
+@media (min-width: 1024px) {
+  .consultation-text p {
+    margin-bottom: 5rem !important;
+  }
+  
+  .consultation-text p:last-child {
+    margin-bottom: 0 !important;
+  }
+}
+
