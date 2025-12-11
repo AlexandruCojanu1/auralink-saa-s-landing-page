@@ -256,35 +256,39 @@ const modalContent = {
       <div class="space-y-4">
         <ul class="space-y-3">
           <li class="flex items-start gap-3">
-            <span class="text-[#3d7a5f] mt-1 text-lg"></span>
+            <span class="text-[#3d7a5f] mt-1 text-lg">•</span>
             <span class="text-[#5a8a6c] text-base leading-7">Am absolvit Facultatea de Medicină a Universității Transilvania din Brașov în <strong>2013</strong></span>
           </li>
           <li class="flex items-start gap-3">
-            <span class="text-[#3d7a5f] mt-1 text-lg"></span>
+            <span class="text-[#3d7a5f] mt-1 text-lg">•</span>
             <span class="text-[#5a8a6c] text-base leading-7">Am efectuat perioada de rezidențiat la <strong>Spitalul de Psihiatrie și Neurologie Brașov</strong></span>
           </li>
           <li class="flex items-start gap-3">
-            <span class="text-[#3d7a5f] mt-1 text-lg"></span>
-            <span class="text-[#5a8a6c] text-base leading-7">Am efectuat gărzi în cadrul Spitalului de Psihiatrie și Neurologie Brașov precum și în cadrul <strong>Spitalului Județean de Urgență "Dr. Fogolyan Kristof" Sfântu Gheorghe</strong></span>
+            <span class="text-[#3d7a5f] mt-1 text-lg">•</span>
+            <span class="text-[#5a8a6c] text-base leading-7">Am efectuat gărzi în cadrul <strong>Spitalul de Psihiatrie și Neurologie Brașov</strong> precum și în cadrul <strong>Spitalului Județean de Urgență "Dr. Fogolyan Kristof" Sfântu Gheorghe</strong></span>
           </li>
           <li class="flex items-start gap-3">
-            <span class="text-[#3d7a5f] mt-1 text-lg"></span>
+            <span class="text-[#3d7a5f] mt-1 text-lg">•</span>
             <span class="text-[#5a8a6c] text-base leading-7">Lucrez ca <strong>Medic psihiatru din 2018</strong></span>
           </li>
           <li class="flex items-start gap-3">
-            <span class="text-[#3d7a5f] mt-1 text-lg"></span>
-            <span class="text-[#5a8a6c] text-base leading-7">Activez în cadrul <strong>Ambulatoriului Spitalului Clinic Militar de Urgență "Regina Maria" Brașov</strong></span>
+            <span class="text-[#3d7a5f] mt-1 text-lg">•</span>
+            <span class="text-[#5a8a6c] text-base leading-7">Activez în cadrul <strong>Ambulatoriului Spitalului Militar Brașov</strong></span>
           </li>
           <li class="flex items-start gap-3">
-            <span class="text-[#3d7a5f] mt-1 text-lg"></span>
+            <span class="text-[#3d7a5f] mt-1 text-lg">•</span>
+            <span class="text-[#5a8a6c] text-base leading-7">Acord consultații în cadrul <strong>clinicii Medivers</strong></span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-[#3d7a5f] mt-1 text-lg">•</span>
             <span class="text-[#5a8a6c] text-base leading-7">Acord consultații în cadrul <strong>clinicii Neuromedica din Brașov</strong></span>
           </li>
           <li class="flex items-start gap-3">
-            <span class="text-[#3d7a5f] mt-1 text-lg"></span>
+            <span class="text-[#3d7a5f] mt-1 text-lg">•</span>
             <span class="text-[#5a8a6c] text-base leading-7">Am la activ numeroase <strong>cursuri de specialitate</strong> legate de patologia psihiatrică, precum și comunicare medic-pacient, gestionarea situațiilor de criză, bunăstarea emoțională și descoperirea potențialului interior</span>
           </li>
           <li class="flex items-start gap-3">
-            <span class="text-[#3d7a5f] mt-1 text-lg"></span>
+            <span class="text-[#3d7a5f] mt-1 text-lg">•</span>
             <span class="text-[#5a8a6c] text-base leading-7">Am competențe de <strong>limba engleză nivel C1 (avansat)</strong></span>
           </li>
         </ul>
